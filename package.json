@@ -1,0 +1,14 @@
+{
+  "name": "mywallet",
+  "version": "1.0.0",
+  "description": "Management of income and expenses",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^30.0.0"
+  }
+}
