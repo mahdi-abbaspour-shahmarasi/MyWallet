@@ -4,11 +4,12 @@
   "description": "Management of income and expenses",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron . --force-ui-direction=rtl"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^30.0.0"
+    "electron": "^30.0.0",
+    "jquery": "^3.7.1"
   }
 }
