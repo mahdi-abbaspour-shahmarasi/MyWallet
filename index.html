@@ -11,23 +11,101 @@
    <body>
       <ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
          <li class="nav-item" role="presentation">
-           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">تراکنش ها</button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#transactions" type="button" role="tab" aria-controls="transactions" aria-selected="true">
+               <img src="assets/img/transactions.png" alt="">   تراکنش ها
+            </button>
          </li>
          <li class="nav-item" role="presentation">
-           <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">حسابها</button>
+           <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#accounts" type="button" role="tab" aria-controls="accounts" aria-selected="false">
+               <img src="assets/img/accounts.png" > حسابها
+            </button>
          </li>
          <li class="nav-item" role="presentation">
-           <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">گروه ها</button>
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#groups" type="button" role="tab" aria-controls="groups" aria-selected="false">
+               <img src="assets/img/groups.png" alt=""> گروه ها
+            </button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#reports" type="button" role="tab" aria-controls="reports" aria-selected="false">
+               <img src="assets/img/print.png" alt=""> گزارشات
+            </button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">
+               <img src="assets/img/setting.png" alt=""> تنظیمات
+            </button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#help" type="button" role="tab" aria-controls="help" aria-selected="false">
+               <img src="assets/img/help.png" alt=""> راهنما
+            </button>
+         </li>
+         <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#exit" type="button" role="tab" aria-controls="exit" aria-selected="false">
+               <img src="assets/img/exit.png" alt=""> خروج
+            </button>
          </li>
        </ul>
-       <div class="tab-content" id="myTabContent">
-         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+       <div class="tab-content " id="myTabContent">
+         <div class="tab-pane fade show active" id="transactions" role="tabpanel" aria-labelledby="home-tab">
+            <div class="standardBar">
+                  <a href="#"><img src="assets/img/new.png" alt=""> جدید</a>
+                  <a href="#"><img src="assets/img/print2.png" alt=""> چاپ لیست</a>
+                  <a href="#"><img src="assets/img/excel.png" alt=""> خروجی اکسل</a>
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>        
+         </div>
+         <div class="tab-pane fade" id="accounts" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="standardBar">
+               حسابها
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>
             <h3 id = "click-counter"></h3>
             <button class = "btn btn-success" id = "countbtn">Click here</button>
          </div>
-         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..</div>
-         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <a href="#" id="exit">خروج</a>
+         <div class="tab-pane fade" id="groups" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="standardBar">
+               گروه ها
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>
+         </div>
+         <div class="tab-pane fade" id="reports" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="standardBar">
+               گزارشات
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>
+         </div>
+         <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="standardBar">
+               تنظیمات
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>
+         </div>
+         <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="standardBar">
+               راهنما
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>
+         </div>
+         <div class="tab-pane fade" id="exit" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="standardBar">
+               خروج
+            </div> 
+            <div class="mainContent">
+                  .
+            </div>
          </div>
        </div>
        

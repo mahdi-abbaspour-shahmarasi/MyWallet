@@ -1,7 +1,48 @@
 html{
-    direction: rtl;   
+    direction: rtl;  
+    height: 100%;
 }
 body{
     font-family: "Vazir";
-    font-size: 12px;
+    font-size: 11px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.standardBar{
+    height: 50px;
+    background-color:rgb(196, 222, 247);
+    margin-top: 2px;
+    box-sizing: border-box;
+}
+.standardBar a{
+    display: block;
+    border: 1px solid #e2e2e2;
+    padding: 12px;
+    float: right;
+    min-width: 80px;
+    background-color: rgb(224, 236, 248);
+    margin: 3px 3px 3px 0px;
+    text-align: left;
+    font-weight: bold;
+    color: #444242;
+    box-sizing: border-box;
+}
+.standardBar a:hover{
+    color: red;
+}
+.standardBar a img{
+    float: right;
+    margin-left: 15px;
+}
+.mainContent{      
+}
+
+.tab-content{
+    background-color: rgb(224, 236, 248);
+    height: calc(100% - 40px);
+    box-sizing: border-box;
 }

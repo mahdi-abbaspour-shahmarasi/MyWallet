@@ -1,4 +1,13 @@
 const {app, BrowserWindow, Menu} = require('electron') 
+
+const sqlite3 = require('sqlite3');
+const db = new sqlite3.Database('./db.db');
+
+db.serialize(() => {
+    //db.run("CREATE TABLE Users (name, lastName)");
+    db.run("INSERT INTO Users VALUES (?, ?)", ['foo', 'bar']);
+  });
+
 const createWindow=()=>
 {
     let win= new BrowserWindow({
@@ -11,6 +20,7 @@ const createWindow=()=>
             contextIsolation: false,
             enableRemoteModule: true,
           },
+        icon: __dirname+'/assets/img/wallet.png',
     })   
     win.loadFile('index.html');
     //win.webContents.openDevTools();
@@ -33,7 +43,7 @@ const createWindow=()=>
         }
     ];
     const myMenu=Menu.buildFromTemplate(template);
-    Menu.setApplicationMenu(null);
+    Menu.setApplicationMenu(myMenu);
 
 }
 app.on('ready', createWindow);
